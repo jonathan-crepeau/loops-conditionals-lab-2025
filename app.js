@@ -87,3 +87,27 @@ const ryan = ["Ryan", 65, "Denver"];
 
 // jimHaff.splice(2, 1);
 // console.log(jimHaff);
+
+
+// Yell at the Ninja Turtles: Create an array with the members of the ninja turtles. 
+// Use a for loop to call .toUpperCase() on each of them and print out the result. 
+// Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+
+// let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// for (let i = 0; i < ninjaTurtles.length; i++) {
+//   console.log(ninjaTurtles[i].toUpperCase());
+// }
+
+// for (let i = 0; i < ninjaTurtles.length; i++) {
+//   let nameString = ninjaTurtles[i].split('');
+//   for (let a = 0; a < nameString.length; a++) {
+//     if (a % 2 === 0) {
+//       nameString[a] = nameString[a].toUpperCase();
+//     }
+//   }
+//   console.log(nameString.join(''));
+// }
+
+
+
