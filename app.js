@@ -20,4 +20,25 @@
 // }
 
 
-// • 
+// • Write a javascript application that logs all numbers from 1 - 100. If a number is divisible by 3 log "Fizz" instead of the number. If a number is divisible by 5 log "Buzz" instead of the number. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+
+// function logFizzBuzz() {
+//   for (let i = 1; i < 101; i++) {
+//     if (i % 15 === 0) {
+//       console.log(i + ' FizzBuzz');
+//     }
+//     if (i % 3 === 0) console.log('Fizz');
+//     if (i % 5 === 0) console.log('Buzz');
+//   }
+// }
+
+// logFizzBuzz()
+
+
+// function secondLogFizzBuzz() {
+//   for (let i = 1; i < 100; i++) {
+//     console.log((i % 3 ? '' : 'fizz') + (i % 5 ? '' : 'Buzz') || i);
+//   }
+// }
+
+// secondLogFizzBuzz();
