@@ -46,11 +46,11 @@
 
 // • Getting To Know You: Use the following arrays to answer the questions below (name, age, hometown):
 
-const kenny = ["Kenny", 1000, "Austin"];
-const jimHaff = ["Jim H", 16, "All cities"];
-const reuben = ["Reuben", 22, "Durham"];
-const jimClark = ["Jim C", 186, "LA"];
-const ryan = ["Ryan", 65, "Denver"];
+// const kenny = ["Kenny", 1000, "Austin"];
+// const jimHaff = ["Jim H", 16, "All cities"];
+// const reuben = ["Reuben", 22, "Durham"];
+// const jimClark = ["Jim C", 186, "LA"];
+// const ryan = ["Ryan", 65, "Denver"];
 
 // 1. im Clark decides that Kenny can't be named "Kenny" anymore. Remove "Kenny" from the kenny array and replace it with "Gameboy".
 
@@ -108,6 +108,88 @@ const ryan = ["Ryan", 65, "Denver"];
 //   }
 //   console.log(nameString.join(''));
 // }
+
+
+// • Return of the Closets:
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// • Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+// let kristynsShoe = kristynsCloset[0];
+// thomsCloset[2].push(kristynsShoe);
+// console.log(thomsCloset);
+
+// • Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+// let kristynOutfitOne = [];
+// let kristynOutfitTwo = [];
+// let kristynOutfitThree = [];
+
+// let kristynsOutfits = [[],[],[]];
+// let thomOutfits = [[], [], []];
+
+function createKristynOutfit(numberOfOutfits) {
+  let outfitsArray = [];
+  for (let i = 1; i <= numberOfOutfits; i++) {
+    let outfit = 'Outfit #' + i + ': ';
+    for (let a = 1; a <= 3; a++) {
+      outfit += kristynsCloset[Math.floor(Math.random() * ((kristynsCloset.length) - 0) + 0)];
+      if (a !== 3) outfit += ', ';
+      else outfit += '.';
+    }
+    outfitsArray.push(outfit);
+  }
+  return outfitsArray;
+}
+
+// console.log(createKristynOutfit(5));
+
+
+function createThomOutfit(inputNum) {
+  let outfitsArray = [];
+  for (let i = 1; i <= inputNum; i++) {
+    let outfit = 'Outfit #' + i + ': ';
+    for (let a = 1; a <= 3; a++) {
+      let sectionNumber = Math.floor(Math.random() * (thomsCloset.length - 0) + 0);
+      outfit += thomsCloset[sectionNumber][Math.floor(Math.random() * ((thomsCloset[sectionNumber].length) - 0) + 0)];
+      if (a !== 3) outfit += ', ';
+      else outfit += '.';
+    }
+    outfitsArray.push(outfit);
+  }
+  return outfitsArray;
+}
+
+console.log(createThomOutfit(6));
 
 
 
