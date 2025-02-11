@@ -157,39 +157,55 @@ const thomsCloset = [
 // let kristynsOutfits = [[],[],[]];
 // let thomOutfits = [[], [], []];
 
-function createKristynOutfit(numberOfOutfits) {
-  let outfitsArray = [];
-  for (let i = 1; i <= numberOfOutfits; i++) {
-    let outfit = 'Outfit #' + i + ': ';
-    for (let a = 1; a <= 3; a++) {
-      outfit += kristynsCloset[Math.floor(Math.random() * ((kristynsCloset.length) - 0) + 0)];
-      if (a !== 3) outfit += ', ';
-      else outfit += '.';
-    }
-    outfitsArray.push(outfit);
-  }
-  return outfitsArray;
-}
+// function createKristynOutfit(numberOfOutfits) {
+//   let outfitsArray = [];
+//   for (let i = 1; i <= numberOfOutfits; i++) {
+//     let outfit = 'Outfit #' + i + ': ';
+//     for (let a = 1; a <= 3; a++) {
+//       outfit += kristynsCloset[Math.floor(Math.random() * ((kristynsCloset.length) - 0) + 0)];
+//       if (a !== 3) outfit += ', ';
+//       else outfit += '.';
+//     }
+//     outfitsArray.push(outfit);
+//   }
+//   return outfitsArray;
+// }
 
 // console.log(createKristynOutfit(5));
 
 
-function createThomOutfit(inputNum) {
-  let outfitsArray = [];
-  for (let i = 1; i <= inputNum; i++) {
-    let outfit = 'Outfit #' + i + ': ';
-    for (let a = 1; a <= 3; a++) {
-      let sectionNumber = Math.floor(Math.random() * (thomsCloset.length - 0) + 0);
-      outfit += thomsCloset[sectionNumber][Math.floor(Math.random() * ((thomsCloset[sectionNumber].length) - 0) + 0)];
-      if (a !== 3) outfit += ', ';
-      else outfit += '.';
-    }
-    outfitsArray.push(outfit);
-  }
-  return outfitsArray;
-}
+// function createThomOutfit(inputNum) {
+//   let outfitsArray = [];
+//   for (let i = 1; i <= inputNum; i++) {
+//     let outfit = 'Outfit #' + i + ': ';
+//     for (let a = 1; a <= 3; a++) {
+//       let sectionNumber = Math.floor(Math.random() * (thomsCloset.length - 0) + 0);
+//       outfit += thomsCloset[sectionNumber][Math.floor(Math.random() * ((thomsCloset[sectionNumber].length) - 0) + 0)];
+//       if (a !== 3) outfit += ', ';
+//       else outfit += '.';
+//     }
+//     outfitsArray.push(outfit);
+//   }
+//   return outfitsArray;
+// }
 
-console.log(createThomOutfit(6));
+// console.log(createThomOutfit(6));
 
 
+// • Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+// function startWashingMachine() {
+//   for (i = 0; i < kristynsCloset.length; i++) {
+//     console.log("WHIRRR: now washing " + kristynsCloset[i]);
+//   }
+// }
+
+
+// • Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+
+// function inventoryThomsCloset() {
+//   for (i = 0; i < thomsCloset.length; i++) {
+//     console.log(thomsCloset[i]);
+//   }
+// }
 
