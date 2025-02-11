@@ -226,4 +226,57 @@ const thomsCloset = [
 // console.log(calculateSumOfMultiples(1000));
 
 
-// • 
+// • Declare a variable argument and set it equal to 7. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of argument.
+
+// function createLeftIso(inputNum) {
+//   let triangleString = '';
+//   let triangleHash = '#';
+//   for (let i = 1; i <= inputNum; i++) {
+//     triangleString += triangleHash.repeat(i) + '\n';
+//   }
+//   return triangleString;
+// }
+
+// console.log(createLeftIso(7));
+
+// • Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of argument. This is deceptively tricky.
+
+// function createRightIso(inputNum) {
+//   let triangleString = '';
+//   let spaceString = ' ';
+//   let hashString = '#';
+//   for (let i = 1; i <= inputNum; i++) {
+//     triangleString += spaceString.repeat(inputNum - i) + hashString.repeat(i) + '\n';
+//   }
+//   return triangleString;
+// }
+
+// console.log(createRightIso(7));
+
+// • Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
+
+// function createUpsideDownLeftIso(inputNum) {
+//   let triangleString = '';
+//   let hashString = '#';
+//   let spaceString = ' ';
+//   for (let i = inputNum; i >= 0; i--) {
+//     triangleString += hashString.repeat(i) + spaceString.repeat(inputNum - i) + '\n';
+//   }
+//   return triangleString;
+// }
+
+// console.log(createUpsideDownLeftIso(7));
+
+// • Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument. This is also tricky.
+
+// function createUpsideDownRightIso(inputNum) {
+//   let triangleString = '';
+//   let hashString = '#';
+//   let spaceString = ' ';
+//   for (let i = inputNum; i >= 0; i--) {
+//     triangleString += spaceString.repeat(inputNum - i) + hashString.repeat(i) + '\n';
+//   }
+//   return triangleString;
+// }
+
+// console.log(createUpsideDownRightIso(7));
