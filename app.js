@@ -280,3 +280,22 @@ const thomsCloset = [
 // }
 
 // console.log(createUpsideDownRightIso(7));
+
+
+// Find the median number in the following nums array, then console.log that number. hint this will likely involve breaking down the problem into a few steps. 
+
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+
+const myNums = [8, 2, 5, 12, 49, 44, 8, 92];
+
+
+function findTheMedian(providedArray) {
+  let sortedArray = providedArray.sort(function(a, b) {
+    return a - b;
+  });
+  console.log(sortedArray);
+  if (sortedArray.length % 2 !== 0) return sortedArray[Math.floor(sortedArray.length/2)];
+  else return ((sortedArray[sortedArray.length/2]) + (sortedArray[sortedArray.length/2 - 1])) / 2;
+}
+
+console.log(findTheMedian(myNums));
